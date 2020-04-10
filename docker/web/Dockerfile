@@ -15,7 +15,6 @@ ADD requirements.txt /project/
 
 # Install requirements
 RUN pip install --upgrade pip
-RUN pip install -r /project/requirements.txt
-
+RUN pip install -U -r /project/requirements.txt
 # Add the current directory(the web folder) to Docker container
 ADD . /project/
